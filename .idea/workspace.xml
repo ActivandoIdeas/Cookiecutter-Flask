@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ad336538-2c72-4de8-a15a-22afc6883269" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/{{cookiecutter.project_slug}}/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/{{cookiecutter.project_slug}}/core/utilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.project_slug}}/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.project_slug}}/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/{{cookiecutter.project_slug}}/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/{{cookiecutter.project_slug}}/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +74,7 @@
       <workItem from="1598937091833" duration="594000" />
       <workItem from="1598937851329" duration="695000" />
       <workItem from="1598938571554" duration="253000" />
-      <workItem from="1598938847251" duration="4258000" />
+      <workItem from="1598938847251" duration="5289000" />
     </task>
     <servers />
   </component>
