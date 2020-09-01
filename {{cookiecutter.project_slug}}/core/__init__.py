@@ -9,7 +9,7 @@ load_dotenv('.env')
 
 def create_app():
     app = Flask(__name__)
-    app.config['SECRET_KEY'] = os.environ.get('API_KEY')
+    app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 
     app.config.from_pyfile('settings.py')
 
