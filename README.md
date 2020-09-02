@@ -5,11 +5,11 @@
     This is a <a href="https://github.com/cookiecutter/cookiecutter" target="__blank">cookiecutter</a> template for generating a flask configuration for your projects.
   </p>
   <p align="center">
-    <a href="https://github.com/ActivandoIdeas/Cookiecutter-Django-AppEngine-GitLab/blob/master/LICENSE">
+    <a href="https://github.com/ActivandoIdeas/Cookiecutter-Flask-Microservice-SQLAlchemy/blob/master/LICENSE">
       	<img src="https://img.shields.io/badge/License-BSD3-blue.svg"  alt="license badge"/>
     </a>
-    <a href="https://travis-ci.org/ActivandoIdeas/Cookiecutter-Django-AppEngine-GitLab">
-        <img src="https://img.shields.io/travis/ActivandoIdeas/Cookiecutter-Django-AppEngine-GitLab.svg?label=django-cookiecutter" alt="Build Status">
+    <a href="https://travis-ci.org/ActivandoIdeas/Cookiecutter-Flask-Microservice-SQLAlchemy">
+        <img src="https://img.shields.io/travis/ActivandoIdeas/Cookiecutter-Flask-Microservice-SQLAlchemy.svg?label=cookiecutter" alt="Build Status">
     </a>
     <a href="https://www.python.org/">
         <img src="https://img.shields.io/pypi/pyversions/Django.svg?style=flat-square"  alt="python badge">
