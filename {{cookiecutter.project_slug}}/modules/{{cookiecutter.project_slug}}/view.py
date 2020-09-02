@@ -1,15 +1,15 @@
 from flask import Blueprint
 from modules.root.models import Msg
 
-root_view = Blueprint('root',
+{{cookiecutter.project_slug}}_view = Blueprint('{{cookiecutter.project_slug}}',
                       __name__,
                       url_prefix='/',
                       template_folder='templates',
                       static_folder='static')
 
 
-@root_view.route("/")
-def root_app():
+@{{cookiecutter.project_slug}}_view.route("/")
+def {{cookiecutter.project_slug}}_app():
     a = Msg.query.all()
     expose = '';
     for i in a:
