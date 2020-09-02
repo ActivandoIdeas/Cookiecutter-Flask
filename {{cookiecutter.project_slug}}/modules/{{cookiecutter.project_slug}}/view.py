@@ -10,9 +10,10 @@ from modules.{{cookiecutter.project_slug}}.models import Msg
 
 @{{cookiecutter.project_slug}}_view.route("/")
 def {{cookiecutter.project_slug}}_app():
+    """Simple function to test app"""
     a = Msg.query.all()
-    expose = ''
+    msg = ''
     for i in a:
-        expose += i.name
+        msg += i.name
 
-    return f"Hello World: {expose}"
+    return f"Hello World: {msg}"
