@@ -27,6 +27,21 @@ You can clone this repository
 
     git clone https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}
 
+## Dependencies
+
+* Flask
+* python-dotenv
+* Flask-sqlalchemy
+* Psycopg2
+* Pytest
+* Flask-migrate
+
+## Development configuration
+
+Rename .env.example to .env file
+
+And add your configuration
+
 ## Use on local
 To install this project just type
 
@@ -46,7 +61,63 @@ Run the project
     
 ## Dockerized app
 
-Building
+Start app
+
+```bash
+docker compose up -d
+```
+
+Stop app
+
+```bash
+docker compose down
+```
+
+Rebuild app
+
+```bash
+docker-compose up -d --build
+```
+
+Access to command line interface
+
+```bash
+docker exec -it flask-app bash
+```
+
+## Run migrations
+
+By default migrations foldar has been add to .gitignore
+
+Open Terminal
+
+```bash
+docker exec -it flask-app bash
+```
+
+Init database migrations
+
+```bash
+flask db init
+```
+
+Generate migrations
+
+```bash
+flask db migrate
+```
+
+Run migrations
+
+```bash
+flask db upgrade
+```
+
+Show more commands
+
+```bash
+flask db
+```
 
 ## File structure
 
@@ -56,12 +127,6 @@ Building
   * **settings** (Injectable settings app)
 * **{{cookiecutter.project_slug}}** Your project modules
   * **root** (Main blueprint Flask module) 
-
-## Development configuration
-
-Rename .env.example to .env file
-
-And add your configurations
 
 ## Preview
 

@@ -1,5 +1,5 @@
 from flask import Blueprint
-from modules.root.models import Migration
+from modules.root.models import Msg
 
 root_view = Blueprint('root',
                       __name__,
@@ -10,8 +10,9 @@ root_view = Blueprint('root',
 
 @root_view.route("/")
 def root_app():
-    a = Migration.query.all()
+    a = Msg.query.all()
+    expose = '';
     for i in a:
-        print(i.name)
+        expose += i.name
 
-    return "Hello World"
+    return f"Hello World: {expose}"
