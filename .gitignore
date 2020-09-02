@@ -5,6 +5,7 @@ __pycache__/
 *.py[cod]
 *$py.class
 lsp/
+.idea/
 
 # C extensions
 *.so
