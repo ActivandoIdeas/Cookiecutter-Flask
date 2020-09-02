@@ -11,7 +11,7 @@ from modules.{{cookiecutter.project_slug}}.models import Msg
 @{{cookiecutter.project_slug}}_view.route("/")
 def {{cookiecutter.project_slug}}_app():
     a = Msg.query.all()
-    expose = '';
+    expose = ''
     for i in a:
         expose += i.name
 
