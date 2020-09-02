@@ -1,5 +1,5 @@
 from flask import Blueprint
-from modules.root.models import Msg
+from modules.{{cookiecutter.project_slug}}.models import Msg
 
 {{cookiecutter.project_slug}}_view = Blueprint('{{cookiecutter.project_slug}}',
                       __name__,
