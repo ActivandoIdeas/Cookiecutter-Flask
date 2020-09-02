@@ -50,7 +50,7 @@ pip install --user cookiecutter
 Use this command
 
 ```shell
-https://github.com/ActivandoIdeas/Cookiecutter-Flask
+cookiecutter https://github.com/ActivandoIdeas/Cookiecutter-Flask
 ```
 
 # License
