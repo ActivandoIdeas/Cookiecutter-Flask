@@ -28,6 +28,8 @@
 - Docker
 - Best practices in your project
 - Extensible
+- GitLab CI/CD
+- GCloud
 
 ## Development tools
 
