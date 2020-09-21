@@ -1,19 +1,37 @@
+"""
+Initialized example
+"""
+
 from flask import Flask
-from modules.{{cookiecutter.project_slug}}.view import {{cookiecutter.project_slug}}_view
 from dotenv import load_dotenv
-from .extensions import db
+from app.connection.db_instance import db
 from flask_migrate import Migrate
+from os import environ
 
-load_dotenv('.env')
+# Main modules
+from modules.example.view import example_view
+
+# Custom configuration environments
+from .config import config
+
+# Load env variables
+load_dotenv(".env")
 
 
-def create_app():
-    app = Flask(__name__)
+def create_app(environment):
+    """Basic modularized example configuration"""
+    application = Flask(__name__)
 
-    app.config.from_pyfile('settings.py')
-    db.init_app(app)
-    with app.app_context():
-        app.register_blueprint({{cookiecutter.project_slug}}_view)
-        Migrate(app, db)
+    application.config.from_object(environment)
 
-    return app
+    db.init_app(application)
+    with application.app_context():
+        application.register_blueprint(example_view)
+        Migrate(application, db)
+
+    return application
+
+
+# Create example
+env = config[environ.get('environment_execution')]
+app = create_app(env)
