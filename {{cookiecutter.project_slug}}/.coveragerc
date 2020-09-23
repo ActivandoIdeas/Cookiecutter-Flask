@@ -4,10 +4,9 @@ omit =
     app.py
     */models*
     */__init__.py
-    */enviroment.py
+    */app/*
+    */migrations/*
+    */env/*
     setup.py
     */labs/*
     */tests/*
-    */settings*
-    */extensions*
-    */database*

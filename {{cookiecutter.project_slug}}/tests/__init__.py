@@ -1,14 +1,18 @@
 """
 Init test env
 """
-from app import app
+from app.configurations.config import TestingConfig
+from app import create_app
 import pytest
+import os
 
 
 @pytest.fixture
 def app():
     """Create example instance"""
-    return app
+    os.environ["environment_execution"] = "testing"
+    microservice = create_app(TestingConfig)
+    return microservice
 
 
 @pytest.fixture

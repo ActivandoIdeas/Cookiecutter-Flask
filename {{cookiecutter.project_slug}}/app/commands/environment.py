@@ -4,7 +4,7 @@ What do you do need to config?
 """
 import sys
 
-config_file = f"app/envs/.env.{sys.argv[1]}"
+config_file = f"app/configurations/envs/.env.{sys.argv[1]}"
 
 # Read env
 with open(config_file) as file_name:
